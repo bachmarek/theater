@@ -8,6 +8,7 @@ from flask_sqlalchemy import SQLAlchemy
 import output
 
 print(output.output)
+
 """
 app = Flask(__name__) 
  if __name__ == "__main__":
@@ -25,4 +26,5 @@ class Data(db.Model):
   info = db.Column(db.String, nullable=False)
 
   def __repr__(self):
-    return f"post('{self.theater}', '{self.date}', '{self.title}', '{self.info}')" """
+    return f"post('{self.theater}', '{self.date}', '{self.title}', '{self.info}')" 
+"""
