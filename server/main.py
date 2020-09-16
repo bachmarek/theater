@@ -7,6 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 import output
 
+print(output.output)
 """
 app = Flask(__name__) 
  if __name__ == "__main__":
