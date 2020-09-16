@@ -1,11 +1,14 @@
-from flask import Flask, request, jsonify
-from flask_sqlalchemy import SQLAlchemy
-from flask_marshmallow import Marshmallow
-import flask_sqlalchemy
 import os
 
+import flask_sqlalchemy
+from flask import Flask, jsonify, request
+from flask_marshmallow import Marshmallow
+from flask_sqlalchemy import SQLAlchemy
+
 import output
-'''
+
+print(output.output)
+"""
 app = Flask(__name__) 
  if __name__ == "__main__":
   app.run(debug=True)
@@ -22,4 +25,4 @@ class Data(db.Model):
   info = db.Column(db.String, nullable=False)
 
   def __repr__(self):
-    return f"post('{self.theater}', '{self.date}', '{self.title}', '{self.info}')" '''
+    return f"post('{self.theater}', '{self.date}', '{self.title}', '{self.info}')" """
