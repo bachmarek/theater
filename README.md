@@ -9,7 +9,6 @@ React Native frontend
 
 - [x] Studio Marta
 - [x] Husa na provázku
-- [x] Radost
 - [x] D'epog
 - [x] Mahenovo divadlo
 - [x] Janáčkovo divadlo
@@ -22,6 +21,8 @@ React Native frontend
 - [ ] Terén
 - [ ] Buranteatr
 - [ ] Divadlo Bolka Polívky
+- [x] Radost <em>(Webpage under construction)</em>
 - [x] Feste <em>(No scheduled events)</em>
+
 
 [![Run on Repl.it](https://repl.it/badge/github/bachmarek/theater)](https://repl.it/github/bachmarek/theater)
