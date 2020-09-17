@@ -22,5 +22,8 @@ React Native frontend
 - [ ] Buranteatr
 - [ ] Divadlo Bolka Polívky
 - [x] Radost <em>(Webpage under construction)</em>
-- [x] Feste <em>(No scheduled events)</em><br>
+- [x] Feste <em>(No scheduled events)</em>
+
+
+
 [![Run on Repl.it](https://repl.it/badge/github/bachmarek/theater)](https://repl.it/github/bachmarek/theater)
