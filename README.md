@@ -17,10 +17,11 @@ React Native frontend
 - [x] HaDivadlo
 - [x] Městské divadlo Brno
 - [ ] Polárka
-- [ ] Za hradbami
+- [x] Za hradbami
 - [x] Artbar
 - [ ] Terén
 - [ ] Buranteatr
 - [ ] Divadlo Bolka Polívky
 - [x] Feste <em>(No scheduled events)</em>
 
+[![Run on Repl.it](https://repl.it/badge/github/bachmarek/theater)](https://repl.it/github/bachmarek/theater)
