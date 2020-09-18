@@ -1,4 +1,4 @@
-''' from bs4 import BeautifulSoup as soup
+from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen as req
 from datetime import datetime as dt
 
@@ -33,8 +33,6 @@ radost_output = []
 last_day_text = ""
 last_day_num = 0
 
-tickets= ""
-
 for container in containers:
 ## Den
   day_container = container.findAll("div",{"class":"col-md-1 radost-bg-red text-white"})
@@ -64,5 +62,3 @@ for container in containers:
   keys = ['theater','date', 'title', 'info']
   radost_row = dict(zip(keys, [theater, date, title, info]))
   radost_output.append(radost_row)
-
-print(radost_output) '''

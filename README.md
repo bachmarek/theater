@@ -20,8 +20,8 @@ React Native frontend
 - [x] Artbar
 - [x] Terén
 - [x] Divadlo Bolka Polívky
+- [x] Radost
 - [x] Buranteatr <em>(connection issues)</em>
-- [x] Radost <em>(Webpage under construction)</em>
 - [x] Feste <em>(No scheduled events)</em>
 
 
