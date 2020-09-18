@@ -7,9 +7,10 @@ import ws_mdb as mdb
 import ws_ndb as ndb
 import ws_zahradbami as zahrad
 import ws_polar as polar
+import ws_teren as teren
 
 # ToDo
-# import ws_teren as teren
+
 # import ws_buran as buran
 # import ws_bolek as bolek
 
@@ -23,7 +24,7 @@ output.append(ndb.ndb_output)
 output.append(artbar.artbar_output)
 output.append(polar.polar_output)
 output.append(zahrad.zahradbami_output)
-# output.append(teren.teren_output)
+output.append(teren.teren_output)
 # output.append(buran.buran_output)
 # output.append(bolek.bolek_output)
 
