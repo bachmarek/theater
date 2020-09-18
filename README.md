@@ -15,7 +15,7 @@ React Native frontend
 - [x] Reduta
 - [x] HaDivadlo
 - [x] Městské divadlo Brno
-- [ ] Polárka
+- [x] Polárka
 - [x] Za hradbami
 - [x] Artbar
 - [ ] Terén
