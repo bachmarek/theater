@@ -10,9 +10,8 @@ import ws_polar as polar
 import ws_teren as teren
 
 # ToDo
-
-# import ws_buran as buran
 # import ws_bolek as bolek
+# output.append(bolek.bolek_output)
 
 output = []
 output.append(depog.depog_output)
@@ -25,12 +24,13 @@ output.append(artbar.artbar_output)
 output.append(polar.polar_output)
 output.append(zahrad.zahradbami_output)
 output.append(teren.teren_output)
-# output.append(buran.buran_output)
-# output.append(bolek.bolek_output)
 
 ## Out of order
 # import ws_feste as feste
 # import ws_radost as radost
-
 # output.append(feste.feste_output)
 # output.append(radost.radost_output)
+
+## connection issues
+# import ws_buran as buran
+# output.append(buran.buran_output)
