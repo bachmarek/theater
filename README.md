@@ -18,9 +18,9 @@ React Native frontend
 - [x] Polárka
 - [x] Za hradbami
 - [x] Artbar
-- [ ] Terén
-- [ ] Buranteatr
+- [x] Terén
 - [ ] Divadlo Bolka Polívky
+- [x] Buranteatr <em>(connection issues)</em>
 - [x] Radost <em>(Webpage under construction)</em>
 - [x] Feste <em>(No scheduled events)</em>
 
