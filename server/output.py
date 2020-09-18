@@ -8,10 +8,7 @@ import ws_ndb as ndb
 import ws_zahradbami as zahrad
 import ws_polar as polar
 import ws_teren as teren
-
-# ToDo
-# import ws_bolek as bolek
-# output.append(bolek.bolek_output)
+import ws_bolek as bolek
 
 output = []
 output.append(depog.depog_output)
@@ -24,6 +21,7 @@ output.append(artbar.artbar_output)
 output.append(polar.polar_output)
 output.append(zahrad.zahradbami_output)
 output.append(teren.teren_output)
+output.append(bolek.bolek_output)
 
 ## Out of order
 # import ws_feste as feste

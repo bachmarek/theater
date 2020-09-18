@@ -19,7 +19,7 @@ React Native frontend
 - [x] Za hradbami
 - [x] Artbar
 - [x] Terén
-- [ ] Divadlo Bolka Polívky
+- [x] Divadlo Bolka Polívky
 - [x] Buranteatr <em>(connection issues)</em>
 - [x] Radost <em>(Webpage under construction)</em>
 - [x] Feste <em>(No scheduled events)</em>
