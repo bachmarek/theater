@@ -10,6 +10,8 @@ import ws_polar as polar
 import ws_teren as teren
 import ws_bolek as bolek
 import ws_radost as radost
+# import ws_feste as feste
+
 
 output = []
 output.append(depog.depog_output)
@@ -24,9 +26,6 @@ output.append(zahrad.zahradbami_output)
 output.append(teren.teren_output)
 output.append(bolek.bolek_output)
 output.append(radost.radost_output)
-
-## Out of order
-# import ws_feste as feste
 # output.append(feste.feste_output)
 
 ## connection issues
