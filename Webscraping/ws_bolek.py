@@ -36,4 +36,3 @@ for container in containers:
   keys = ['theater', 'date', 'title', 'info']
   bolek_row = dict(zip(keys, [theater, date, title, info]))
   bolek_output.append(bolek_row)
-print(bolek_output)

@@ -10,7 +10,8 @@ from Webscraping import ws_polar as polar
 from Webscraping import ws_teren as teren
 from Webscraping import ws_bolek as bolek
 from Webscraping import ws_radost as radost
-#from Webscraping  import ws_feste as feste
+
+# from Webscraping  import ws_feste as feste
 
 output = []
 
@@ -29,5 +30,5 @@ output.append(radost.radost_output)
 # output.append(feste.feste_output)
 
 ## connection issues
-#from Webscraping  import ws_buran as buran
+# from Webscraping  import ws_buran as buran
 # output.append(buran.buran_output)

@@ -1,3 +1,5 @@
 from Webscraping import output
+from pydash import flatten
 
-print(output.output)
+merge = flatten(output.output)
+print(merge)

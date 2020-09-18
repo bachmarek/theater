@@ -1,4 +1,4 @@
-''' from bs4 import BeautifulSoup as soup
+""" from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen as req
 from datetime import datetime as dt
 import re
@@ -64,5 +64,4 @@ else:
   keys = ['theater','date', 'title', 'info']
   feste_row = dict(zip(keys, [theater, date, title, info]))
   feste_output.append(feste_row)
-
-print(feste_output) '''
+ """

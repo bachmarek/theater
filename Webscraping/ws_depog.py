@@ -11,8 +11,7 @@ page_html = uClient.read()
 
 page_soup = soup(page_html, "html.parser")
 uClient.close()
-containers = page_soup.findAll("div", {"class": "dates__block"})
-print(containers)
+containers = page_soup.findAll("a", {"class": "dates__block"})
 
 ## Divadlo
 theater = "depog"
