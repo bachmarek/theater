@@ -12,22 +12,24 @@ from common import ws_bolek as bolek
 from common import ws_radost as radost
 from common import ws_buran as buran
 # from common  import ws_feste as feste
+from pydash import flatten
 
-output = []
-
-output.append(depog.depog())
-output.append(artbar.artbar())
-output.append(husa.husa())
-output.append(marta.marta())
-output.append(mdb.mdb())
-output.append(hadi.hadi())
-output.append(ndb.ndb())
-output.append(polar.polar())
-output.append(zahrad.zahradbami())
-output.append(teren.teren())
-output.append(bolek.bolek())
-output.append(radost.radost())
-output.append(buran.buran())
-# output.append(feste.feste())
-
+def output_func():
+  output = []
+  output.append(depog.depog())
+  output.append(artbar.artbar())
+  output.append(husa.husa())
+  output.append(marta.marta())
+  output.append(mdb.mdb())
+  output.append(hadi.hadi())
+  output.append(ndb.ndb())
+  output.append(polar.polar())
+  output.append(zahrad.zahradbami())
+  output.append(teren.teren())
+  output.append(bolek.bolek())
+  output.append(radost.radost())
+  output.append(buran.buran())
+  # output.append(feste.feste())
+  flat_output = flatten(output)
+  return flat_output
 
