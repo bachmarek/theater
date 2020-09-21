@@ -129,6 +129,17 @@ tests = ["pytest", "pytz", "simplejson"]
 
 [[package]]
 category = "main"
+description = "The kitchen sink of Python utility libraries for doing \"stuff\" in a functional way. Based on the Lo-Dash Javascript library."
+name = "pydash"
+optional = false
+python-versions = "*"
+version = "4.8.0"
+
+[package.extras]
+dev = ["coverage", "flake8", "mock", "pylint", "pytest", "pytest-cov", "sphinx", "sphinx-rtd-theme", "tox", "twine", "wheel"]
+
+[[package]]
+category = "main"
 description = "Python 2 and 3 compatibility utilities"
 name = "six"
 optional = false
@@ -187,7 +198,7 @@ version = "0.35.1"
 test = ["pytest (>=3.0.0)", "pytest-cov"]
 
 [metadata]
-content-hash = "78d885d94c63a5749b54811fc017ad1273088e62d29a57f87977c1bdebc64a08"
+content-hash = "c5dda58015b92df5213eea23a6fa7ae13c3f6ae4a23c991ff5d9e6b795bc3809"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -261,6 +272,10 @@ markupsafe = [
 marshmallow = [
     {file = "marshmallow-3.8.0-py2.py3-none-any.whl", hash = "sha256:2272273505f1644580fbc66c6b220cc78f893eb31f1ecde2af98ad28011e9811"},
     {file = "marshmallow-3.8.0.tar.gz", hash = "sha256:47911dd7c641a27160f0df5fd0fe94667160ffe97f70a42c3cc18388d86098cc"},
+]
+pydash = [
+    {file = "pydash-4.8.0-py2.py3-none-any.whl", hash = "sha256:611ad40e3b11fb57396cca4a55ea04641200a1dd632c3c7e2c14849bee386625"},
+    {file = "pydash-4.8.0.tar.gz", hash = "sha256:546afa043ed1defa3122383bebe8b7072f43554ccc5f0c4360638f99e5ed7327"},
 ]
 six = [
     {file = "six-1.15.0-py2.py3-none-any.whl", hash = "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"},

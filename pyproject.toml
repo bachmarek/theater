@@ -11,6 +11,7 @@ flask = "^1.1.2"
 flask-sqlalchemy = "^2.4.4"
 flask-marshmallow = "^0.13.0"
 wheel = "^0.35.1"
+pydash = "^4.8.0"
 
 [tool.poetry.dev-dependencies]
 

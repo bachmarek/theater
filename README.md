@@ -21,9 +21,7 @@ React Native frontend
 - [x] Terén
 - [x] Divadlo Bolka Polívky
 - [x] Radost
-- [x] Buranteatr <em>(connection issues)</em>
+- [x] Buranteatr
 - [x] Feste <em>(No scheduled events)</em>
-
-
 
 [![Run on Repl.it](https://repl.it/badge/github/bachmarek/theater)](https://repl.it/github/bachmarek/theater)
