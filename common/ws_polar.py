@@ -11,7 +11,6 @@ def polar():
 
   page_soup = soup(page_html, 'html.parser')
   containers = page_soup.findAll("div",{"class":"program__left-part"})
-  dates = page_soup.findAll("h1",{"class":"underline"})
 
   theater = "polar"
   polar_output = []
@@ -24,27 +23,32 @@ def polar():
   year = page_soup.find("h1",{"class":"underline"}).text.strip().split()[1]
 
   for container in containers:
-  ## Měsíc
-    month_man = container.find("strong").text.split("/")[1]
-    month = str(month_dict[month_man])
-  ## Den
-    day = container.find("strong").text.split("/")[0]
-  ## Time
-    time = container.find("span").text.split()[-1].replace(".", ":")+":00"
-  ## Název  
-    title_container = container.find("a")
-    if title_container.span:
-      title_container.span.extract()
-    title = title_container.text.strip()
-  ## Info
-    info = container.find("a")["href"]
+    canceled = container.findChild("div", {"class":"program__canceled"})
+    if canceled == None:
+    ## Měsíc
+      month_man = container.strong.text.split("/")[1]
+      month = str(month_dict[month_man])
 
-  ## Date string
-    date_string = time +" "+ day +" "+ month +" "+ year
-    date = dt.strptime(date_string, "%X %d %b %Y")
+    ## Den
+      day = container.find("strong").text.split("/")[0]
+    ## Time
+      time = container.find("span").text.strip().split()[-1].replace(".", ":")+":00"
+    ## Název  
+      title_container = container.find("a")
+      if title_container.span:
+        title_container.span.extract()
+      title = title_container.text.strip()
+    ## Info
+      info = container.find("a")["href"]
 
-  ## Output
-    keys = ['theater', 'date', 'title', 'info']
-    polar_row = dict(zip(keys, [theater, date, title, info]))
-    polar_output.append(polar_row)
+    ## Date string
+      date_string = time +" "+ day +" "+ month +" "+ year
+      date = dt.strptime(date_string, "%X %d %b %Y")
+      
+      ## Output
+      keys = ['theater', 'date', 'title', 'info']
+      polar_row = dict(zip(keys, [theater, date, title, info]))
+      polar_output.append(polar_row)
+    else: 
+      None
   return polar_output

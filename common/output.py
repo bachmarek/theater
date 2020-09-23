@@ -10,7 +10,7 @@ from common import ws_polar as polar
 from common import ws_teren as teren
 from common import ws_bolek as bolek
 from common import ws_radost as radost
-from common import ws_buran as buran
+# from common import ws_buran as buran
 # from common  import ws_feste as feste
 from pydash import flatten
 
@@ -28,7 +28,7 @@ def output_func():
   output.append(teren.teren())
   output.append(bolek.bolek())
   output.append(radost.radost())
-  output.append(buran.buran())
+  # output.append(buran.buran())
   # output.append(feste.feste())
   flat_output = flatten(output)
   return flat_output
