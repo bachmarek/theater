@@ -19,15 +19,19 @@ class Theaters(db.Model):
     info = db.Column(db.String(100))
 
     ## wrong
-    def __init__(self, theater, date, title, info):
-        for i in data:
-            self.theater = theater
-            self.date = date
-            self.title = title
-            self.info = info
-            play = Theaters(data[i])
-            db.session.add(play)
-            db.session.commit()
+
+
+def __init__(self, theater, date, title, info):
+    i = 0
+    while i in len(data):
+        self.theater = data[i]["theater"]
+        self.date = data[i]["date"]
+        self.title = data[i]["title"]
+        self.info = data[i]["info"]
+        play = Theaters(theater, date, title, info)
+        db.session.add(play)
+        db.session.commit()
+        i += 1
 
 
 # print(data)
