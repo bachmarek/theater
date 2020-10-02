@@ -42,3 +42,10 @@ db.session.commit()
 plays = Theaters.query.all()
 
 print(len(plays))
+if __name__ == "__main__":
+    app.run(debug=True)
+
+
+@app.route("/data/")
+def plays():
+    return "<h1>data</h1>"
