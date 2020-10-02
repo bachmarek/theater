@@ -8,21 +8,26 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///theater_db"
 
 db = SQLAlchemy(app)
 
+data = output.webscraped()
+
 
 class Theaters(db.Model):
+    __tablename__ = "theaters"
     theater = db.Column(db.String(100), primary_key=True)
     date = db.Column(db.DateTime)
     title = db.Column(db.String(100))
     info = db.Column(db.String(100))
 
+    ## wrong
+    def __init__(self, theater, date, title, info):
+        for i in data:
+            self.theater = theater
+            self.date = date
+            self.title = title
+            self.info = info
+            play = Theaters(data[i])
+            db.session.add(play)
+            db.session.commit()
 
-@app.route("/<theater>/<date>/<title>/<info>")
-def index(theater, date, title, info):
-    play = Theaters(theater=theater, date=date, title=title, info=info)
-    db.session.add(play)
-    db.session.commit()
 
-    return "added play"
-
-
-# print(output.output_func())
+# print(data)

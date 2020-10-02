@@ -5,18 +5,18 @@ from common import ws_husa as husa
 from common import ws_marta as marta
 from common import ws_mdb as mdb
 from common import ws_ndb as ndb
-from common import ws_zahradbami as zahrad
 from common import ws_polar as polar
 from common import ws_teren as teren
 from common import ws_bolek as bolek
-from common import ws_radost as radost
 
+# from common import ws_zahradbami as zahrad
+# from common import ws_radost as radost
 # from common import ws_buran as buran
 # from common  import ws_feste as feste
 from pydash import flatten
 
 
-def output_func():
+def webscraped():
     output = []
     output.append(depog.depog())
     output.append(artbar.artbar())
@@ -26,10 +26,10 @@ def output_func():
     output.append(hadi.hadi())
     output.append(ndb.ndb())
     output.append(polar.polar())
-    output.append(zahrad.zahradbami())
     output.append(teren.teren())
     output.append(bolek.bolek())
-    output.append(radost.radost())
+    # output.append(zahrad.zahradbami())
+    # output.append(radost.radost())
     # output.append(buran.buran())
     # output.append(feste.feste())
     flat_output = flatten(output)
