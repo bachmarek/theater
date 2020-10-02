@@ -1,7 +1,0 @@
-{
-    "python.pythonPath": "C:\\Users\\Marek\\.virtualenvs\\server-tOCoueeJ\\Scripts\\python.exe",
-    "python.linting.pylintArgs": [
-        "--load-plugins",
-        "pylint-flask"
-    ]
-}
