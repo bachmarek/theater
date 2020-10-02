@@ -10,6 +10,8 @@ flask = "*"
 flask-sqlalchemy = "*"
 pylint-flask = "*"
 bs4 = "*"
+requests = "*"
+pydash = "*"
 
 [requires]
 python_version = "3.8"
