@@ -13,23 +13,28 @@ data = output.webscraped()
 
 class Theaters(db.Model):
     __tablename__ = "theaters"
-    theater = db.Column(db.String(100), primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    theater = db.Column(db.String(1000))
     date = db.Column(db.DateTime)
-    title = db.Column(db.String(100))
-    info = db.Column(db.String(100))
-
-    ## wrong
-    def __init__(self, theater, date, title, info):
-        i = 0
-        while i in len(data):
-            self.theater = data[i]["theater"]
-            self.date = data[i]["date"]
-            self.title = data[i]["title"]
-            self.info = data[i]["info"]
-            play = Theaters(theater, date, title, info)
-            db.session.add(play)
-            db.session.commit()
-            i += 1
+    title = db.Column(db.String(1000))
+    info = db.Column(db.String(1000))
 
 
-# print(data)
+# sync models -> db tables
+db.create_all()
+
+# first object
+fp = data[0]
+
+# create instance of Theaters class
+test_play = Theaters(
+    theater=fp["theater"], date=fp["date"], title=fp["title"], info=fp["info"])
+
+# save to db
+db.session.add(test_play)
+db.session.commit()
+
+# get all Theaters from db
+plays = Theaters.query.all()
+
+print(len(plays))
