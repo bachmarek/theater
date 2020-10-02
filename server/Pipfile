@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 flask = "*"
 flask-sqlalchemy = "*"
+pylint-flask = "*"
 
 [requires]
 python_version = "3.8"
