@@ -54,4 +54,3 @@ server/theater_db
 .vscode
 node_modules/
 .env
-client/build
