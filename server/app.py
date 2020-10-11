@@ -22,7 +22,7 @@ class Theaters(db.Model):
 
 # sync models -> db tables
 db.create_all()
-Theaters.query.delete()
+# Theaters.query.delete()
 play_list = []
 # create instance of Theaters class
 for play in data:
