@@ -51,6 +51,8 @@ docs/_build
 
 
 server/theater_db
-.vscode
 app/node_modules/
 .env
+
+app/.expo/*
+app/web-build/
